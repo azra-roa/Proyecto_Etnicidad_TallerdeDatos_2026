@@ -32,3 +32,5 @@ enaho_2024 <- mod200 %>%
 install.packages("arrow")
 library(arrow)
 renv::snapshot()
+write_parquet(enaho_2024, "datos/procesados/enaho_2024_170626.parquet")
+
