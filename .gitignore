@@ -49,6 +49,8 @@ po/*~
 rsconnect/
 
 datos/crudos/
+datos/procesados/
 *.csv
 *.dta
 *.sav
+*.parquet
