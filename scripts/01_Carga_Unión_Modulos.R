@@ -11,4 +11,9 @@ library(janitor)
 library(haven) 
 library(dplyr) 
 library(tidyr)
+renv::snapshot()
 
+#2. Importación de datos---------------------------
+
+mod200 <- read_dta("datos/crudos/enaho01-2024-200.dta") %>% rename_with(tolower)
+mod500 <- read_dta("datos/crudos/enaho01a-2024-500.dta") %>% rename_with(tolower)
