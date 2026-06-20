@@ -27,3 +27,8 @@ keys_persona <- c(keys_hogar, "codperso", "p203", "p204", "p205",
 
 enaho_2024 <- mod200 %>%
   left_join(mod500, by = keys_persona)
+
+#4. Exportación de la base creada
+install.packages("arrow")
+library(arrow)
+renv::snapshot()
